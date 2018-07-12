@@ -38,7 +38,7 @@ get_header();
                 <div class="col-md-6">
                     <h1><?php echo $about_us_title?></h1>
                     <div class="aboutTxt"><?php echo $about_us_subtitle ?></div>
-                    <p><?php echo $about_us_description?></p>
+                    <?php echo $about_us_description?>
                     <!--<div class="readmore"><a href="<?php echo home_url('/about-us')?>" class="btn"><?php echo pll__("Read More") ?></a></div>-->
 
                 </div>
