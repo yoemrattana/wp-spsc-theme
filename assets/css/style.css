@@ -440,8 +440,12 @@ Own
 	vertical-align: middle;
 }
 /***************************/
-.about-us-desc ul, ol, p{
+.about-us-desc ul, ol, p, br{
 	all:unset
+}
+
+.about-us-desc li {
+	margin-left: 30px;
 }
 
 /*****************************************
