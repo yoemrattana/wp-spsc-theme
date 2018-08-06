@@ -439,6 +439,11 @@ Own
 	display:        inline-block;
 	vertical-align: middle;
 }
+/***************************/
+.about-us-desc ul, ol, p{
+	all:unset
+}
+
 /*****************************************
 		media screen
 *****************************************/
