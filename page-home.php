@@ -49,18 +49,18 @@ get_header();
             <div class="consultWrap sliderForm">
                 <div class="formwrap">
                     <h3><?php echo pll__("Free Consultation") ?></h3>
-                    <form>
+                    <form method="POST" action="https://formspree.io/<?php echo $contact_us_email ?>">
                         <div class="form-group">
-                            <input type="text" name="name" class="form-control" placeholder="<?php echo pll__("Name") ?> *">
+                            <input type="text" name="Name" class="form-control" placeholder="<?php echo pll__("Name") ?> *">
                         </div>
                         <div class="form-group">
-                            <input type="text" name="email" class="form-control" placeholder="<?php echo pll__("Email") ?> *">
+                            <input type="text" name="Email" class="form-control" placeholder="<?php echo pll__("Email") ?> *">
                         </div>
                         <div class="form-group">
-                            <input type="text" name="phone" class="form-control" placeholder="<?php echo pll__("Phone") ?> *">
+                            <input type="text" name="Phone" class="form-control" placeholder="<?php echo pll__("Phone") ?> *">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" placeholder="<?php echo pll__("Tell us") ?> *"></textarea>
+                            <textarea class="form-control" name="Message" placeholder="<?php echo pll__("Tell us") ?> *"></textarea>
                         </div>
                         <div class="form-group">
                             <input type="submit" class="btn" value="<?php echo pll__("Contact Us") ?>">
@@ -219,32 +219,32 @@ get_header();
                 </div>
             </div>
             <div class="col-md-6">
-                <form>
+                <form method="POST" action="https://formspree.io/<?php echo $contact_us_email ?>">
                     <div class="contactForm formwrap">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="name" placeholder="<?php echo pll__("First Name") ?>" class="form-control">
+                                    <input type="text" name="First name" placeholder="<?php echo pll__("First Name") ?>" class="form-control">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="name" placeholder="<?php echo pll__("Last Name") ?>" class="form-control">
+                                    <input type="text" name="Last name" placeholder="<?php echo pll__("Last Name") ?>" class="form-control">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="phone" placeholder="<?php echo pll__("Phone No") ?>" class="form-control">
+                                    <input type="text" name="Phone" placeholder="<?php echo pll__("Phone No") ?>" class="form-control">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="email" placeholder="<?php echo pll__("Email") ?>" class="form-control">
+                                    <input type="text" name="Email" placeholder="<?php echo pll__("Email") ?>" class="form-control">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="<?php echo pll__("Message") ?>"></textarea>
+                                    <textarea class="form-control" name="Message" placeholder="<?php echo pll__("Message") ?>"></textarea>
                                 </div>
                             </div>
                         </div>
